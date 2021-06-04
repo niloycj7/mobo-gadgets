@@ -372,7 +372,7 @@ const Home = ({ navigation }) => {
                     }}
                 >
                     <Image
-                        source={icons.nearby}
+                        source={icons.cellphone}
                         resizeMode="contain"
                         style={{
                             width: 30,
@@ -404,7 +404,7 @@ const Home = ({ navigation }) => {
                     }}
                 >
                     <Image
-                        source={icons.basket}
+                        source={icons.store}
                         resizeMode="contain"
                         style={{
                             width: 30,
