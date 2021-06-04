@@ -19,7 +19,6 @@ const App = () => {
             >
                 <Stack.Screen name="Home" component={Tabs} />
                 <Stack.Screen name="Product" component={Product} />
-                {/* <Stack.Screen name="OrderDelivery" component={OrderDelivery} /> */}
             </Stack.Navigator>
         </NavigationContainer>
     )
