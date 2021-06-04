@@ -16,7 +16,7 @@ const Home = ({ navigation }) => {
     // Dummy Datas
 
     const initialCurrentLocation = {
-        streetName: "Kuching",
+        streetName: "Dhanmondi-Multiplan",
         gps: {
             latitude: 1.5496614931250685,
             longitude: 110.36381866919922
@@ -59,7 +59,6 @@ const Home = ({ navigation }) => {
             name: "Asus",
             icon: icons.asus,
         }
-
     ]
 
     // price rating
@@ -161,9 +160,9 @@ const Home = ({ navigation }) => {
         },
         {
             id: 3,
-            name: "Google Pixel 5",
+            name: "Google Pixel 5XL",
             rating: 4.8,
-            categories: [3],
+            categories: [2],
             priceRating: expensive,
 
             photo: images.pixel5,
@@ -178,47 +177,34 @@ const Home = ({ navigation }) => {
                 name: "James"
             },
             menu: [
-                // {
-                //     phoneId: 8,
-                //     name: "Chicago Style Hot Dog",
-                //     photo: images.chicago_hot_dog,
-                //     description: "Fresh tomatoes, all beef hot dogs",
-                //     calories: 100,
-                //     price: 20
-                // }
                 {
                     phoneId: 7,
-                    name: "Galaxy S21 Ultra 5G - Phantom Violet",
-                    photo: images.samsungS21UltraGVi,
+                    name: "Google Pixel 5 XL Black",
+                    photo: images.pixel5Bl,
                     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                     calories: 250,
-                    price: 870
+                    price: 550
                 },
                 {
                     phoneId: 8,
-                    name: "Galaxy S21 Ultra 5G - Phantom Gray",
-                    photo: images.samsungS21UltraGGr,
+                    name:"Google Pixel 5 XL Sorta Stage",
+                    photo: images.pixel5S,
                     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                     calories: 250,
-                    price: 870
+                    price: 550
                 },
-                {
-                    phoneId: 9,
-                    name: "Galaxy S21 Ultra 5G - Phantom Silver",
-                    photo: images.samsungS21UltraGSi,
-                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    calories: 100,
-                    price: 870
-                }
             ]
         },
         {
             id: 4,
-            name: "ByProgrammers Sushi",
+            name: "OnePlus 9R",
             rating: 4.8,
-            categories: [8],
+            categories: [3],
             priceRating: expensive,
-            photo: images.japanese_restaurant,
+
+            photo: images.oneplus9R,
+            duration: "10 - 15 min",
+
             location: {
                 latitude: 1.5578068150528928,
                 longitude: 110.35482523764315,
@@ -228,47 +214,33 @@ const Home = ({ navigation }) => {
                 name: "Ahmad"
             },
             menu: [
-                // {
-                //     phoneId: 9,
-                //     name: "Sushi sets",
-                //     photo: images.sushi,
-                //     description: "Fresh salmon, sushi rice, fresh juicy avocado",
-                //     calories: 100,
-                //     price: 50
-                // }
+                {
+                    phoneId: 9,
+                    name: "OnePlus 9R Carbon Black",
+                    photo: images.oneplus9RC,
+                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                    calories: 250,
+                    price: 594.99
+                },
                 {
                     phoneId: 10,
-                    name: "Galaxy S21 Ultra 5G - Phantom Violet",
-                    photo: images.samsungS21UltraGVi,
+                    name: "OnePlus 9R Lake Blue",
+                    photo: images.oneplus9RL,
                     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                     calories: 250,
-                    price: 870
-                },
-                {
-                    phoneId: 11,
-                    name: "Galaxy S21 Ultra 5G - Phantom Gray",
-                    photo: images.samsungS21UltraGGr,
-                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    calories: 250,
-                    price: 870
-                },
-                {
-                    phoneId: 12,
-                    name: "Galaxy S21 Ultra 5G - Phantom Silver",
-                    photo: images.samsungS21UltraGSi,
-                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    calories: 100,
-                    price: 870
+                    price: 594.99
                 }
             ]
         },
         {
             id: 5,
-            name: "ByProgrammers Cuisine",
+            name: "Huawei Mate 40E",
             rating: 4.8,
-            categories: [1, 2],
+            categories: [4],
             priceRating: affordable,
-            photo: images.noodle_shop,
+
+            photo: images.huawei40,
+            duration: "15 - 20 min",
             location: {
                 latitude: 1.558050496260768,
                 longitude: 110.34743759630511,
@@ -278,59 +250,27 @@ const Home = ({ navigation }) => {
                 name: "Muthu"
             },
             menu: [
-                // {
-                //     phoneId: 10,
-                //     name: "Kolo Mee",
-                //     photo: images.kolo_mee,
-                //     description: "Noodles with char siu",
-                //     calories: 200,
-                //     price: 5
-                // },
-                // {
-                //     phoneId: 11,
-                //     name: "Sarawak Laksa",
-                //     photo: images.sarawak_laksa,
-                //     description: "Vermicelli noodles, cooked prawns",
-                //     calories: 300,
-                //     price: 8
-                // },
-                // {
-                //     phoneId: 12,
-                //     name: "Nasi Lemak",
-                //     photo: images.nasi_lemak,
-                //     description: "A traditional Malay rice dish",
-                //     calories: 300,
-                //     price: 8
-                // },
-                // {
-                //     phoneId: 13,
-                //     name: "Nasi Briyani with Mutton",
-                //     photo: images.nasi_briyani_mutton,
-                //     description: "A traditional Indian rice dish with mutton",
-                //     calories: 300,
-                //     price: 8
-                // },
 
                 {
+                    phoneId: 11,
+                    name: "Huawei Mate 40E Black",
+                    photo: images.huawei40B,
+                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                    calories: 250,
+                    price: 870
+                },
+                {
+                    phoneId: 12,
+                    name: "Huawei Mate 40E Silver",
+                    photo: images.huawei40S,
+                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                    calories: 250,
+                    price: 870
+                },
+                {
                     phoneId: 13,
-                    name: "Galaxy S21 Ultra 5G - Phantom Violet",
-                    photo: images.samsungS21UltraGVi,
-                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    calories: 250,
-                    price: 870
-                },
-                {
-                    phoneId: 14,
-                    name: "Galaxy S21 Ultra 5G - Phantom Gray",
-                    photo: images.samsungS21UltraGGr,
-                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    calories: 250,
-                    price: 870
-                },
-                {
-                    phoneId: 15,
-                    name: "Galaxy S21 Ultra 5G - Phantom Silver",
-                    photo: images.samsungS21UltraGSi,
+                    name: "Huawei Mate 40E White",
+                    photo: images.huawei40W,
                     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                     calories: 100,
                     price: 870
@@ -354,33 +294,9 @@ const Home = ({ navigation }) => {
                 avatar: images.avatar_1,
                 name: "Jessie"
             },
-            menu: [
-                // {
-                //     phoneId: 12,
-                //     name: "Teh C Peng",
-                //     photo: images.teh_c_peng,
-                //     description: "Three Layer Teh C Peng",
-                //     calories: 100,
-                //     price: 2
-                // },
-                // {
-                //     phoneId: 13,
-                //     name: "ABC Ice Kacang",
-                //     photo: images.ice_kacang,
-                //     description: "Shaved Ice with red beans",
-                //     calories: 100,
-                //     price: 3
-                // },
-                // {
-                //     phoneId: 14,
-                //     name: "Kek Lapis",
-                //     photo: images.kek_lapis,
-                //     description: "Layer cakes",
-                //     calories: 300,
-                //     price: 20
-                // }
+            menu: [ 
                 {
-                    phoneId: 16,
+                    phoneId: 14,
                     name: "Galaxy S21 Ultra 5G - Phantom Violet",
                     photo: images.samsungS21UltraGVi,
                     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -388,7 +304,7 @@ const Home = ({ navigation }) => {
                     price: 870
                 },
                 {
-                    phoneId: 17,
+                    phoneId: 15,
                     name: "Galaxy S21 Ultra 5G - Phantom Gray",
                     photo: images.samsungS21UltraGGr,
                     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -396,7 +312,7 @@ const Home = ({ navigation }) => {
                     price: 870
                 },
                 {
-                    phoneId: 18,
+                    phoneId: 16,
                     name: "Galaxy S21 Ultra 5G - Phantom Silver",
                     photo: images.samsungS21UltraGSi,
                     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -413,6 +329,7 @@ const Home = ({ navigation }) => {
     const [categories, setCategories] = React.useState(categoryData)
     const [selectedCategory, setSelectedCategory] = React.useState(null)
     const [restaurants, setRestaurants] = React.useState(restaurantData)
+    // const [products, setProducts] = React.useState(productData)
     const [currentLocation, setCurrentLocation] = React.useState(initialCurrentLocation)
 
 
