@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
     StyleSheet,
     SafeAreaView,
@@ -6,7 +7,8 @@ import {
     Text,
     TouchableOpacity,
     Image,
-    Animated
+    Animated,
+    Alert
 } from "react-native";
 import { isIphoneX } from 'react-native-iphone-x-helper'
 
@@ -18,6 +20,12 @@ const Product = ({ route, navigation }) => {
     const [product, setProduct] = React.useState(null);
     const [currentLocation, setCurrentLocation] = React.useState(null);
     const [orderItems, setOrderItems] = React.useState([]);
+
+    const showAlert = () =>{
+        Alert.alert(
+           'Thank You For Purchase. You will get your product soon.'
+        )
+    }
 
     React.useEffect(() => {
         let { item, currentLocation } = route.params;
@@ -373,14 +381,20 @@ const Product = ({ route, navigation }) => {
                                 padding: SIZES.padding,
                                 backgroundColor: COLORS.primary,
                                 alignItems: 'center',
-                                borderRadius: SIZES.radius
+                                borderRadius: SIZES.radius,
+                                button: {
+                                    backgroundColor: '#4ba37b',
+                                    width: 100,
+                                    borderRadius: 50,
+                                    alignItems: 'center',
+                                    marginTop: 100
+                                 }
                             }}
-                            onPress={() => navigation.navigate("OrderDelivery", {
-                                product: product,
-                                currentLocation: currentLocation
-                            })}
+
+                            onPress = {showAlert} style = {styles.button}
+
                         >
-                            <Text style={{ color: COLORS.white, ...FONTS.h2 }}>Order</Text>
+                            <Text style={{ color: COLORS.success, ...FONTS.h2 }}>Order</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
