@@ -26,7 +26,7 @@ const Home = ({ navigation }) => {
     const categoryData = [
         {
             id: 1,
-            name: "Iphone",
+            name: "Apple",
             icon: icons.iphone,
         },
         {
@@ -70,11 +70,15 @@ const Home = ({ navigation }) => {
     const restaurantData = [
         {
             id: 1,
-            name: "ByProgrammers Burger",
-            rating: 4.8,
-            categories: [5, 7],
-            priceRating: affordable,
-            photo: images.burger_restaurant_1,
+
+            name: "Iphone 12 Pro Max",
+            rating: 5.0,
+            categories: [1],
+            priceRating: expensive,
+            price: 999,
+            photo: images.iphone12proMax,
+            // duration: "30 - 45 min",
+
             location: {
                 latitude: 1.5347282806345879,
                 longitude: 110.35632207358996,
@@ -85,38 +89,41 @@ const Home = ({ navigation }) => {
             },
             menu: [
                 {
-                    menuId: 1,
-                    name: "Crispy Chicken Burger",
-                    photo: images.crispy_chicken_burger,
-                    description: "Burger with crispy chicken, cheese and lettuce",
+                    phoneId: 1,
+                    name: "Pacific Blue iPhone 12 Pro Max",
+                    photo: images.iphone12proMaxB,
+                    description: "Distinctive and dark, the brand new Pacific Blue hue looks fabulous.",
                     calories: 200,
-                    price: 10
+                    price: 999
                 },
                 {
-                    menuId: 2,
-                    name: "Crispy Chicken Burger with Honey Mustard",
-                    photo: images.honey_mustard_chicken_burger,
-                    description: "Crispy Chicken Burger with Honey Mustard Coleslaw",
+                    phoneId: 2,
+                    name: "Graphite iPhone 12 Pro Max",
+                    photo: images.iphone12proMaxG,
+                    description: "Iconic is a word to describe the Apple iPhone.",
                     calories: 250,
-                    price: 15
+                    price: 999
                 },
                 {
-                    menuId: 3,
-                    name: "Crispy Baked French Fries",
-                    photo: images.baked_fries,
-                    description: "Crispy Baked French Fries",
+                    phoneId: 3,
+                    name: "Silver iPhone 12 Pro",
+                    photo: images.iphone12proMaxS,
+                    description: "Nearly as iconic as Graphite, Silver has been a popular iPhone color choice for many years.",
                     calories: 194,
-                    price: 8
+                    price: 999
                 }
             ]
         },
         {
             id: 2,
-            name: "ByProgrammers Pizza",
-            rating: 4.8,
-            categories: [2, 4, 6],
+            name: "Samsung Galaxy S21 Ultra 5G",
+            rating: 4.9,
+            categories: [5],
             priceRating: expensive,
-            photo: images.pizza_restaurant,
+
+            photo: images.samsungS21UltraG,
+            duration: "15 - 20 min",
+        
             location: {
                 latitude: 1.556306570595712,
                 longitude: 110.35504616746915,
@@ -127,46 +134,41 @@ const Home = ({ navigation }) => {
             },
             menu: [
                 {
-                    menuId: 4,
-                    name: "Hawaiian Pizza",
-                    photo: images.hawaiian_pizza,
-                    description: "Canadian bacon, homemade pizza crust, pizza sauce",
+                    phoneId: 4,
+                    name: "Galaxy S21 Ultra 5G - Phantom Violet",
+                    photo: images.samsungS21UltraGVi,
+                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                     calories: 250,
-                    price: 15
+                    price: 870
                 },
                 {
-                    menuId: 5,
-                    name: "Tomato & Basil Pizza",
-                    photo: images.pizza,
-                    description: "Fresh tomatoes, aromatic basil pesto and melted bocconcini",
+                    phoneId: 5,
+                    name: "Galaxy S21 Ultra 5G - Phantom Gray",
+                    photo: images.samsungS21UltraGGr,
+                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                     calories: 250,
-                    price: 20
+                    price: 870
                 },
                 {
-                    menuId: 6,
-                    name: "Tomato Pasta",
-                    photo: images.tomato_pasta,
-                    description: "Pasta with fresh tomatoes",
+                    phoneId: 6,
+                    name: "Galaxy S21 Ultra 5G - Phantom Silver",
+                    photo: images.samsungS21UltraGSi,
+                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                     calories: 100,
-                    price: 10
-                },
-                {
-                    menuId: 7,
-                    name: "Mediterranean Chopped Salad ",
-                    photo: images.salad,
-                    description: "Finely chopped lettuce, tomatoes, cucumbers",
-                    calories: 100,
-                    price: 10
+                    price: 870
                 }
             ]
         },
         {
             id: 3,
-            name: "ByProgrammers Hotdogs",
+            name: "Google Pixel 5",
             rating: 4.8,
             categories: [3],
             priceRating: expensive,
-            photo: images.hot_dog_restaurant,
+
+            photo: images.pixel5,
+            duration: "20 - 25 min",
+
             location: {
                 latitude: 1.5238753474714375,
                 longitude: 110.34261833833622,
@@ -176,13 +178,37 @@ const Home = ({ navigation }) => {
                 name: "James"
             },
             menu: [
+                // {
+                //     phoneId: 8,
+                //     name: "Chicago Style Hot Dog",
+                //     photo: images.chicago_hot_dog,
+                //     description: "Fresh tomatoes, all beef hot dogs",
+                //     calories: 100,
+                //     price: 20
+                // }
                 {
-                    menuId: 8,
-                    name: "Chicago Style Hot Dog",
-                    photo: images.chicago_hot_dog,
-                    description: "Fresh tomatoes, all beef hot dogs",
+                    phoneId: 7,
+                    name: "Galaxy S21 Ultra 5G - Phantom Violet",
+                    photo: images.samsungS21UltraGVi,
+                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                    calories: 250,
+                    price: 870
+                },
+                {
+                    phoneId: 8,
+                    name: "Galaxy S21 Ultra 5G - Phantom Gray",
+                    photo: images.samsungS21UltraGGr,
+                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                    calories: 250,
+                    price: 870
+                },
+                {
+                    phoneId: 9,
+                    name: "Galaxy S21 Ultra 5G - Phantom Silver",
+                    photo: images.samsungS21UltraGSi,
+                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                     calories: 100,
-                    price: 20
+                    price: 870
                 }
             ]
         },
@@ -202,13 +228,37 @@ const Home = ({ navigation }) => {
                 name: "Ahmad"
             },
             menu: [
+                // {
+                //     phoneId: 9,
+                //     name: "Sushi sets",
+                //     photo: images.sushi,
+                //     description: "Fresh salmon, sushi rice, fresh juicy avocado",
+                //     calories: 100,
+                //     price: 50
+                // }
                 {
-                    menuId: 9,
-                    name: "Sushi sets",
-                    photo: images.sushi,
-                    description: "Fresh salmon, sushi rice, fresh juicy avocado",
+                    phoneId: 10,
+                    name: "Galaxy S21 Ultra 5G - Phantom Violet",
+                    photo: images.samsungS21UltraGVi,
+                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                    calories: 250,
+                    price: 870
+                },
+                {
+                    phoneId: 11,
+                    name: "Galaxy S21 Ultra 5G - Phantom Gray",
+                    photo: images.samsungS21UltraGGr,
+                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                    calories: 250,
+                    price: 870
+                },
+                {
+                    phoneId: 12,
+                    name: "Galaxy S21 Ultra 5G - Phantom Silver",
+                    photo: images.samsungS21UltraGSi,
+                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                     calories: 100,
-                    price: 50
+                    price: 870
                 }
             ]
         },
@@ -228,38 +278,63 @@ const Home = ({ navigation }) => {
                 name: "Muthu"
             },
             menu: [
+                // {
+                //     phoneId: 10,
+                //     name: "Kolo Mee",
+                //     photo: images.kolo_mee,
+                //     description: "Noodles with char siu",
+                //     calories: 200,
+                //     price: 5
+                // },
+                // {
+                //     phoneId: 11,
+                //     name: "Sarawak Laksa",
+                //     photo: images.sarawak_laksa,
+                //     description: "Vermicelli noodles, cooked prawns",
+                //     calories: 300,
+                //     price: 8
+                // },
+                // {
+                //     phoneId: 12,
+                //     name: "Nasi Lemak",
+                //     photo: images.nasi_lemak,
+                //     description: "A traditional Malay rice dish",
+                //     calories: 300,
+                //     price: 8
+                // },
+                // {
+                //     phoneId: 13,
+                //     name: "Nasi Briyani with Mutton",
+                //     photo: images.nasi_briyani_mutton,
+                //     description: "A traditional Indian rice dish with mutton",
+                //     calories: 300,
+                //     price: 8
+                // },
+
                 {
-                    menuId: 10,
-                    name: "Kolo Mee",
-                    photo: images.kolo_mee,
-                    description: "Noodles with char siu",
-                    calories: 200,
-                    price: 5
+                    phoneId: 13,
+                    name: "Galaxy S21 Ultra 5G - Phantom Violet",
+                    photo: images.samsungS21UltraGVi,
+                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                    calories: 250,
+                    price: 870
                 },
                 {
-                    menuId: 11,
-                    name: "Sarawak Laksa",
-                    photo: images.sarawak_laksa,
-                    description: "Vermicelli noodles, cooked prawns",
-                    calories: 300,
-                    price: 8
+                    phoneId: 14,
+                    name: "Galaxy S21 Ultra 5G - Phantom Gray",
+                    photo: images.samsungS21UltraGGr,
+                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                    calories: 250,
+                    price: 870
                 },
                 {
-                    menuId: 12,
-                    name: "Nasi Lemak",
-                    photo: images.nasi_lemak,
-                    description: "A traditional Malay rice dish",
-                    calories: 300,
-                    price: 8
-                },
-                {
-                    menuId: 13,
-                    name: "Nasi Briyani with Mutton",
-                    photo: images.nasi_briyani_mutton,
-                    description: "A traditional Indian rice dish with mutton",
-                    calories: 300,
-                    price: 8
-                },
+                    phoneId: 15,
+                    name: "Galaxy S21 Ultra 5G - Phantom Silver",
+                    photo: images.samsungS21UltraGSi,
+                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                    calories: 100,
+                    price: 870
+                }
 
             ]
         },
@@ -280,29 +355,53 @@ const Home = ({ navigation }) => {
                 name: "Jessie"
             },
             menu: [
+                // {
+                //     phoneId: 12,
+                //     name: "Teh C Peng",
+                //     photo: images.teh_c_peng,
+                //     description: "Three Layer Teh C Peng",
+                //     calories: 100,
+                //     price: 2
+                // },
+                // {
+                //     phoneId: 13,
+                //     name: "ABC Ice Kacang",
+                //     photo: images.ice_kacang,
+                //     description: "Shaved Ice with red beans",
+                //     calories: 100,
+                //     price: 3
+                // },
+                // {
+                //     phoneId: 14,
+                //     name: "Kek Lapis",
+                //     photo: images.kek_lapis,
+                //     description: "Layer cakes",
+                //     calories: 300,
+                //     price: 20
+                // }
                 {
-                    menuId: 12,
-                    name: "Teh C Peng",
-                    photo: images.teh_c_peng,
-                    description: "Three Layer Teh C Peng",
-                    calories: 100,
-                    price: 2
+                    phoneId: 16,
+                    name: "Galaxy S21 Ultra 5G - Phantom Violet",
+                    photo: images.samsungS21UltraGVi,
+                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                    calories: 250,
+                    price: 870
                 },
                 {
-                    menuId: 13,
-                    name: "ABC Ice Kacang",
-                    photo: images.ice_kacang,
-                    description: "Shaved Ice with red beans",
-                    calories: 100,
-                    price: 3
+                    phoneId: 17,
+                    name: "Galaxy S21 Ultra 5G - Phantom Gray",
+                    photo: images.samsungS21UltraGGr,
+                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                    calories: 250,
+                    price: 870
                 },
                 {
-                    menuId: 14,
-                    name: "Kek Lapis",
-                    photo: images.kek_lapis,
-                    description: "Layer cakes",
-                    calories: 300,
-                    price: 20
+                    phoneId: 18,
+                    name: "Galaxy S21 Ultra 5G - Phantom Silver",
+                    photo: images.samsungS21UltraGSi,
+                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                    calories: 100,
+                    price: 870
                 }
             ]
 
@@ -532,7 +631,7 @@ const Home = ({ navigation }) => {
                                         ...FONTS.body3,
                                         color: (priceRating <= item.priceRating) ? COLORS.black : COLORS.darkgray
                                     }}
-                                >$</Text>
+                                >$870</Text>
                             ))
                         }
                     </View>

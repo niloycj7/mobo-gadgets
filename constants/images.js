@@ -28,8 +28,26 @@ const sarawak_laksa = require("../assets/images/sarawak-laksa.jpg");
 const sushi = require("../assets/images/sushi.jpg");
 const teh_c_peng = require("../assets/images/teh-c-peng.jpg");
 const tomato_pasta = require("../assets/images/tomato-pasta.jpg");
+const iphone12proMax = require("../assets/images/iPhone-12-ProMax.png");
+const iphone12proMaxB = require("../assets/images/iphone12proMaxB.jpg");
+const iphone12proMaxG = require("../assets/images/iphone12proMaxG.jpg");
+const iphone12proMaxS = require("../assets/images/iphone12proMaxS.jpg");
+const samsungS21UltraG = require("../assets/images/Samsung-Galaxy-S21.jpg");
+const samsungS21UltraGVi = require("../assets/images/Samsung-Galaxy-S21V.jpg");
+const samsungS21UltraGGr = require("../assets/images/Samsung-Galaxy-S21GR.jpg");
+const samsungS21UltraGSi = require("../assets/images/Samsung-Galaxy-S21Si.jpg");
+const pixel5 = require("../assets/images/pixel5.png");
 
 export default {
+    iphone12proMax,
+    iphone12proMaxB,
+    iphone12proMaxG,
+    iphone12proMaxS,
+    samsungS21UltraG,
+    samsungS21UltraGVi,
+    samsungS21UltraGGr,
+    samsungS21UltraGSi,
+    pixel5,
     avatar_1,
     avatar_2,
     avatar_3,
