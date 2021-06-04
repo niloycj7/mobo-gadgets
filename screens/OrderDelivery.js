@@ -19,8 +19,6 @@ const OrderDelivery = ({ route, navigation }) => {
     const [fromLocation, setFromLocation] = React.useState(null)
     const [toLocation, setToLocation] = React.useState(null)
     const [region, setRegion] = React.useState(null)
-
-    const [duration, setDuration] = React.useState(0)
     const [isReady, setIsReady] = React.useState(false)
     const [angle, setAngle] = React.useState(0)
 
@@ -152,8 +150,6 @@ const OrderDelivery = ({ route, navigation }) => {
                         strokeColor={COLORS.primary}
                         optimizeWaypoints={true}
                         onReady={result => {
-                            setDuration(result.duration)
-
                             if (!isReady) {
                                 // Fit route into maps
                                 mapView.current.fitToCoordinates(result.coordinates, {
@@ -224,8 +220,6 @@ const OrderDelivery = ({ route, navigation }) => {
                     <View style={{ flex: 1 }}>
                         <Text style={{ ...FONTS.body3 }}>{streetName}</Text>
                     </View>
-
-                    <Text style={{ ...FONTS.body3 }}>{Math.ceil(duration)} mins</Text>
                 </View>
             </View>
         )

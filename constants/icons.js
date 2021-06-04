@@ -29,6 +29,8 @@ export const xiaomi = require("../assets/icons/xiaomi.png");
 export const oneplus = require("../assets/icons/oneplus.png");
 export const realme = require("../assets/icons/realme.png");
 export const google = require("../assets/icons/google.png");
+export const huawei = require("../assets/icons/huawei.png");
+export const asus = require("../assets/icons/asus.png");
 
 export default {
     iphone,
@@ -37,6 +39,8 @@ export default {
     oneplus,
     realme,
     google,
+    huawei,
+    asus,
     back,
     car,
     cutlery,
