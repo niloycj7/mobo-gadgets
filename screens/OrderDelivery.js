@@ -8,25 +8,27 @@ import {
 import MapView, { PROVIDER_GOOGLE, Marker } from 'react-native-maps';
 import MapViewDirections from "react-native-maps-directions";
 
-import { COLORS, FONTS, icons, SIZES, GOOGLE_API_KEY } from "../constants"
+import { COLORS, FONTS, icons, SIZES, GOOGLE_API_KEY} from "../constants"
 
 const OrderDelivery = ({ route, navigation }) => {
 
     const mapView = React.useRef()
 
-    const [restaurant, setRestaurant] = React.useState(null)
+    const [product, setProduct] = React.useState(null)
     const [streetName, setStreetName] = React.useState("")
     const [fromLocation, setFromLocation] = React.useState(null)
     const [toLocation, setToLocation] = React.useState(null)
     const [region, setRegion] = React.useState(null)
+
+    const [duration, setDuration] = React.useState(0)
     const [isReady, setIsReady] = React.useState(false)
     const [angle, setAngle] = React.useState(0)
 
     React.useEffect(() => {
-        let { restaurant, currentLocation } = route.params;
+        let { product, currentLocation } = route.params;
 
         let fromLoc = currentLocation.gps
-        let toLoc = restaurant.location
+        let toLoc = product.location
         let street = currentLocation.streetName
 
         let mapRegion = {
@@ -36,7 +38,7 @@ const OrderDelivery = ({ route, navigation }) => {
             longitudeDelta: Math.abs(fromLoc.longitude - toLoc.longitude) * 2
         }
 
-        setRestaurant(restaurant)
+        setProduct(product)
         setStreetName(street)
         setFromLocation(fromLoc)
         setToLocation(toLoc)
@@ -150,6 +152,8 @@ const OrderDelivery = ({ route, navigation }) => {
                         strokeColor={COLORS.primary}
                         optimizeWaypoints={true}
                         onReady={result => {
+                            setDuration(result.duration)
+
                             if (!isReady) {
                                 // Fit route into maps
                                 mapView.current.fitToCoordinates(result.coordinates, {
@@ -220,6 +224,8 @@ const OrderDelivery = ({ route, navigation }) => {
                     <View style={{ flex: 1 }}>
                         <Text style={{ ...FONTS.body3 }}>{streetName}</Text>
                     </View>
+
+                    <Text style={{ ...FONTS.body3 }}>{Math.ceil(duration)} mins</Text>
                 </View>
             </View>
         )
@@ -249,7 +255,7 @@ const OrderDelivery = ({ route, navigation }) => {
                     <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                         {/* Avatar */}
                         <Image
-                            source={restaurant?.courier.avatar}
+                            source={product?.courier.avatar}
                             style={{
                                 width: 50,
                                 height: 50,
@@ -260,18 +266,18 @@ const OrderDelivery = ({ route, navigation }) => {
                         <View style={{ flex: 1, marginLeft: SIZES.padding }}>
                             {/* Name & Rating */}
                             <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-                                <Text style={{ ...FONTS.h4 }}>{restaurant?.courier.name}</Text>
+                                <Text style={{ ...FONTS.h4 }}>{product?.courier.name}</Text>
                                 <View style={{ flexDirection: 'row' }}>
                                     <Image
                                         source={icons.star}
                                         style={{ width: 18, height: 18, tintColor: COLORS.primary, marginRight: SIZES.padding }}
                                     />
-                                    <Text style={{ ...FONTS.body3 }}>{restaurant?.rating}</Text>
+                                    <Text style={{ ...FONTS.body3 }}>{product?.rating}</Text>
                                 </View>
                             </View>
 
                             {/* Restaurant */}
-                            <Text style={{ color: COLORS.darkgray, ...FONTS.body4 }}>{restaurant?.name}</Text>
+                            <Text style={{ color: COLORS.darkgray, ...FONTS.body4 }}>{product?.name}</Text>
                         </View>
                     </View>
 
