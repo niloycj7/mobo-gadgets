@@ -16,7 +16,7 @@ const Home = ({ navigation }) => {
     // Dummy Datas
 
     const initialCurrentLocation = {
-        streetName: "Dhanmondi-Multiplan",
+        streetName: "Dhanmondi-MGshop",
         gps: {
             latitude: 1.5496614931250685,
             longitude: 110.36381866919922
@@ -66,7 +66,7 @@ const Home = ({ navigation }) => {
     const fairPrice = 2
     const expensive = 3
 
-    const restaurantData = [
+    const productData = [
         {
             id: 1,
 
@@ -76,7 +76,6 @@ const Home = ({ navigation }) => {
             priceRating: expensive,
             price: 999,
             photo: images.iphone12proMax,
-            // duration: "30 - 45 min",
 
             location: {
                 latitude: 1.5347282806345879,
@@ -92,7 +91,6 @@ const Home = ({ navigation }) => {
                     name: "Pacific Blue iPhone 12 Pro Max",
                     photo: images.iphone12proMaxB,
                     description: "Distinctive and dark, the brand new Pacific Blue hue looks fabulous.",
-                    calories: 200,
                     price: 999
                 },
                 {
@@ -100,7 +98,6 @@ const Home = ({ navigation }) => {
                     name: "Graphite iPhone 12 Pro Max",
                     photo: images.iphone12proMaxG,
                     description: "Iconic is a word to describe the Apple iPhone.",
-                    calories: 250,
                     price: 999
                 },
                 {
@@ -108,7 +105,6 @@ const Home = ({ navigation }) => {
                     name: "Silver iPhone 12 Pro",
                     photo: images.iphone12proMaxS,
                     description: "Nearly as iconic as Graphite, Silver has been a popular iPhone color choice for many years.",
-                    calories: 194,
                     price: 999
                 }
             ]
@@ -119,9 +115,7 @@ const Home = ({ navigation }) => {
             rating: 4.9,
             categories: [5],
             priceRating: expensive,
-
             photo: images.samsungS21UltraG,
-            duration: "15 - 20 min",
         
             location: {
                 latitude: 1.556306570595712,
@@ -137,7 +131,6 @@ const Home = ({ navigation }) => {
                     name: "Galaxy S21 Ultra 5G - Phantom Violet",
                     photo: images.samsungS21UltraGVi,
                     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    calories: 250,
                     price: 870
                 },
                 {
@@ -145,7 +138,6 @@ const Home = ({ navigation }) => {
                     name: "Galaxy S21 Ultra 5G - Phantom Gray",
                     photo: images.samsungS21UltraGGr,
                     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    calories: 250,
                     price: 870
                 },
                 {
@@ -153,7 +145,6 @@ const Home = ({ navigation }) => {
                     name: "Galaxy S21 Ultra 5G - Phantom Silver",
                     photo: images.samsungS21UltraGSi,
                     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    calories: 100,
                     price: 870
                 }
             ]
@@ -161,13 +152,10 @@ const Home = ({ navigation }) => {
         {
             id: 3,
             name: "Google Pixel 5XL",
-            rating: 4.8,
+            rating: 4.74,
             categories: [2],
             priceRating: expensive,
-
             photo: images.pixel5,
-            duration: "20 - 25 min",
-
             location: {
                 latitude: 1.5238753474714375,
                 longitude: 110.34261833833622,
@@ -182,7 +170,6 @@ const Home = ({ navigation }) => {
                     name: "Google Pixel 5 XL Black",
                     photo: images.pixel5Bl,
                     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    calories: 250,
                     price: 550
                 },
                 {
@@ -190,7 +177,6 @@ const Home = ({ navigation }) => {
                     name:"Google Pixel 5 XL Sorta Stage",
                     photo: images.pixel5S,
                     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    calories: 250,
                     price: 550
                 },
             ]
@@ -198,13 +184,11 @@ const Home = ({ navigation }) => {
         {
             id: 4,
             name: "OnePlus 9R",
-            rating: 4.8,
+            rating: 4.9,
             categories: [3],
             priceRating: expensive,
 
             photo: images.oneplus9R,
-            duration: "10 - 15 min",
-
             location: {
                 latitude: 1.5578068150528928,
                 longitude: 110.35482523764315,
@@ -219,7 +203,6 @@ const Home = ({ navigation }) => {
                     name: "OnePlus 9R Carbon Black",
                     photo: images.oneplus9RC,
                     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    calories: 250,
                     price: 594.99
                 },
                 {
@@ -227,7 +210,6 @@ const Home = ({ navigation }) => {
                     name: "OnePlus 9R Lake Blue",
                     photo: images.oneplus9RL,
                     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    calories: 250,
                     price: 594.99
                 }
             ]
@@ -235,12 +217,11 @@ const Home = ({ navigation }) => {
         {
             id: 5,
             name: "Huawei Mate 40E",
-            rating: 4.8,
+            rating: 4.85,
             categories: [4],
             priceRating: affordable,
 
             photo: images.huawei40,
-            duration: "15 - 20 min",
             location: {
                 latitude: 1.558050496260768,
                 longitude: 110.34743759630511,
@@ -256,24 +237,21 @@ const Home = ({ navigation }) => {
                     name: "Huawei Mate 40E Black",
                     photo: images.huawei40B,
                     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    calories: 250,
-                    price: 870
+                    price: 714.00
                 },
                 {
                     phoneId: 12,
                     name: "Huawei Mate 40E Silver",
                     photo: images.huawei40S,
                     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    calories: 250,
-                    price: 870
+                    price: 714.00
                 },
                 {
                     phoneId: 13,
                     name: "Huawei Mate 40E White",
                     photo: images.huawei40W,
                     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    calories: 100,
-                    price: 870
+                    price: 714.00
                 }
 
             ]
@@ -281,11 +259,11 @@ const Home = ({ navigation }) => {
         {
 
             id: 6,
-            name: "ByProgrammers Dessets",
-            rating: 4.9,
-            categories: [9, 10],
+            name: "Redmi Note 10 Pro 5G",
+            rating: 4.5,
+            categories: [6],
             priceRating: affordable,
-            photo: images.kek_lapis_shop,
+            photo: images.redmiNote10Pro,
             location: {
                 latitude: 1.5573478487252896,
                 longitude: 110.35568783282145,
@@ -297,27 +275,59 @@ const Home = ({ navigation }) => {
             menu: [ 
                 {
                     phoneId: 14,
-                    name: "Galaxy S21 Ultra 5G - Phantom Violet",
-                    photo: images.samsungS21UltraGVi,
+                    name: "Redmi Note 10 Pro Onyx Gray",
+                    photo: images.redmiNote10ProOnx,
                     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    calories: 250,
-                    price: 870
+                    price: 279
                 },
                 {
                     phoneId: 15,
-                    name: "Galaxy S21 Ultra 5G - Phantom Gray",
-                    photo: images.samsungS21UltraGGr,
+                    name: "Redmi Note 10 Pro Glacier Blue",
+                    photo: images.redmiNote10ProGl,
                     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    calories: 250,
-                    price: 870
+                    price: 280
                 },
                 {
                     phoneId: 16,
-                    name: "Galaxy S21 Ultra 5G - Phantom Silver",
-                    photo: images.samsungS21UltraGSi,
+                    name: "Redmi Note 10 Pro Gradient Bronze",
+                    photo: images.redmiNote10ProGb,
                     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                    calories: 100,
-                    price: 870
+                    price: 279
+                }
+            ]
+
+        },
+
+        {
+
+            id: 7,
+            name: "Asus Zenfone 7 Max Pro",
+            rating: 4.8,
+            categories: [7],
+            priceRating: affordable,
+            photo: images.asusZenfone7maxPro,
+            location: {
+                latitude: 1.5573478487252896,
+                longitude: 110.35568783282145,
+            },
+            courier: {
+                avatar: images.avatar_1,
+                name: "Jessie"
+            },
+            menu: [ 
+                {
+                    phoneId: 17,
+                    name: "Asus Zenfone 7 Max Pro Aurora Black",
+                    photo: images.asusZenfone7maxProAu,
+                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                    price: 648.99
+                },
+                {
+                    phoneId: 18,
+                    name: "Asus Zenfone 7 Max Pro Pastel White",
+                    photo: images.asusZenfone7maxProPa,
+                    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                    price: 648.99
                 }
             ]
 
@@ -328,16 +338,16 @@ const Home = ({ navigation }) => {
 
     const [categories, setCategories] = React.useState(categoryData)
     const [selectedCategory, setSelectedCategory] = React.useState(null)
-    const [restaurants, setRestaurants] = React.useState(restaurantData)
-    // const [products, setProducts] = React.useState(productData)
+    // const [restaurants, setRestaurants] = React.useState(restaurantData)
+    const [products, setProducts] = React.useState(productData)
     const [currentLocation, setCurrentLocation] = React.useState(initialCurrentLocation)
 
 
     function onSelectCategory(category) {
         //filter restaurant
-        let restaurantList = restaurantData.filter(a => a.categories.includes(category.id))
+        let productList = productData.filter(a => a.categories.includes(category.id))
 
-        setRestaurants(restaurantList)
+        setProducts(productList)
 
         setSelectedCategory(category)
     }
@@ -471,11 +481,11 @@ const Home = ({ navigation }) => {
         )
     }
 
-    function renderRestaurantList() {
+    function renderProductList() {
         const renderItem = ({ item }) => (
             <TouchableOpacity
                 style={{ marginBottom: SIZES.padding * 2 }}
-                onPress={() => navigation.navigate("Restaurant", {
+                onPress={() => navigation.navigate("Product", {
                     item,
                     currentLocation
                 })}
@@ -558,7 +568,7 @@ const Home = ({ navigation }) => {
 
         return (
             <FlatList
-                data={restaurants}
+                data={products}
                 keyExtractor={item => `${item.id}`}
                 renderItem={renderItem}
                 contentContainerStyle={{
@@ -573,7 +583,7 @@ const Home = ({ navigation }) => {
         <SafeAreaView style={styles.container}>
             {renderHeader()}
             {renderMainCategories()}
-            {renderRestaurantList()}
+            {renderProductList()}
         </SafeAreaView>
     )
 }
