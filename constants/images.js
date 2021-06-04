@@ -36,7 +36,17 @@ const samsungS21UltraG = require("../assets/images/Samsung-Galaxy-S21.jpg");
 const samsungS21UltraGVi = require("../assets/images/Samsung-Galaxy-S21V.jpg");
 const samsungS21UltraGGr = require("../assets/images/Samsung-Galaxy-S21GR.jpg");
 const samsungS21UltraGSi = require("../assets/images/Samsung-Galaxy-S21Si.jpg");
-const pixel5 = require("../assets/images/pixel5.png");
+const pixel5 = require("../assets/images/googlePixel5xl.jpg");
+const pixel5Bl = require("../assets/images/googlePixel5Bl.jpg");
+const pixel5S = require("../assets/images/googlePixel5xlS.jpg");
+const oneplus9R = require("../assets/images/oneplus9R.jpg");
+const oneplus9RC = require("../assets/images/oneplus9RC.jpg");
+const oneplus9RL = require("../assets/images/oneplus9RL.jpg");
+const huawei40 = require("../assets/images/huaweiMate40E.jpg");
+const huawei40B = require("../assets/images/huaweiMate40EB.jpg");
+const huawei40S = require("../assets/images/huaweiMate40ES.jpg");
+const huawei40W = require("../assets/images/huaweiMate40EW.jpg");
+
 
 export default {
     iphone12proMax,
@@ -48,6 +58,15 @@ export default {
     samsungS21UltraGGr,
     samsungS21UltraGSi,
     pixel5,
+    pixel5Bl,
+    pixel5S,
+    oneplus9R,
+    oneplus9RC,
+    oneplus9RL,
+    huawei40,
+    huawei40B,
+    huawei40S,
+    huawei40W,
     avatar_1,
     avatar_2,
     avatar_3,
