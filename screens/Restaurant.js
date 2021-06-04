@@ -234,7 +234,7 @@ const Restaurant = ({ route, navigation }) => {
                                     paddingHorizontal: SIZES.padding * 2
                                 }}
                             >
-                                <Text style={{ marginVertical: 10, textAlign: 'center', ...FONTS.h2 }}>{item.name} - {item.price.toFixed(2)}</Text>
+                                <Text style={{ marginVertical: 10, textAlign: 'center', ...FONTS.h2 }}>{item.name} - ${item.price.toFixed(2)}</Text>
                                 <Text style={{ ...FONTS.body3 }}>{item.description}</Text>
                             </View>
 
