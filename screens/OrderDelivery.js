@@ -276,7 +276,7 @@ const OrderDelivery = ({ route, navigation }) => {
                                 </View>
                             </View>
 
-                            {/* Restaurant */}
+                            {/* Product */}
                             <Text style={{ color: COLORS.darkgray, ...FONTS.body4 }}>{product?.name}</Text>
                         </View>
                     </View>
